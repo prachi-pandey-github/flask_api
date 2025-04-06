@@ -28,7 +28,7 @@ def get_gemini_response(prompt):
     else:
         return f"Error: {response.status_code} - {response.text}"
 
-@app.route("/get-recommendation", methods=["GET"])
+@app.route("/")
 def get_recommendation():
     query = request.args.get("query")
     if not query:
