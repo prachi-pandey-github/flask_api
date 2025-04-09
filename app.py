@@ -10,7 +10,7 @@ app = Flask(__name__)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")  # or replace with your key as a string
 
 def get_gemini_response(prompt):
-    url = "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash-001:generateContent"
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-thinking-exp-01-21:generateContent"
     headers = {"Content-Type": "application/json"}
     params = {"key": GEMINI_API_KEY}
     data = {
