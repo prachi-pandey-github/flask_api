@@ -3,11 +3,11 @@ import requests
 import os
 from dotenv import load_dotenv
 
-load_dotenv()  # Load environment variables from .env if available
+load_dotenv() 
 
 app = Flask(__name__)
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")  # or replace with your key as a string
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")  
 
 def get_gemini_response(prompt):
     url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-thinking-exp-01-21:generateContent"
